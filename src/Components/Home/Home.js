@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import HomeReviews from '../HomeReviews/HomeReviews';
 import Reviews from '../Reviews/Reviews';
 import './Home.css';
 
@@ -21,7 +22,7 @@ const Home = () => {
             </div>
             <div>
                 <h2 className="home-review">Customer Review(3)</h2>
-                <Reviews></Reviews>
+                <HomeReviews></HomeReviews>
 
 
                 <div className="btn-container">
