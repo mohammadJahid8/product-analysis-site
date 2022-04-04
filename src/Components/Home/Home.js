@@ -1,8 +1,11 @@
 import React from 'react';
+import useReview from '../hooks/useReview';
 import Reviews from '../Reviews/Reviews';
 import './Home.css';
 
 const Home = () => {
+    
+    
     return (
         <div className="">
             <div className="header-container">
@@ -19,9 +22,14 @@ const Home = () => {
             <div>
                 <h2 className="home-review">Customer Review(3)</h2>
                 <Reviews></Reviews>
-                <div className="btn-container">
 
-                    <button className="review-btn"><p>See All Reviews</p></button>
+
+                <div className="btn-container">
+                    <button className="review-btn">
+                        <p>See All Reviews </p>
+                        <svg id="arrow-icon" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg></button>
                 </div>
             </div>
         </div>
