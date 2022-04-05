@@ -4,3 +4,9 @@
     gap: 20px;
     margin: 50px 50px;
 }
+
+@media only screen and (max-width: 668px) {
+    .all-reviews{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,10 @@
+.about-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.about-img img{
+    width: 100%;
+    height: auto;
+}
