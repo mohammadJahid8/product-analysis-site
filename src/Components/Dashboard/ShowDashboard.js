@@ -1,5 +1,5 @@
 import React from 'react';
-import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart,  Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
 import './ShowDashBoard.css'
 
 const ShowDashboard = () => {
@@ -46,7 +46,7 @@ const ShowDashboard = () => {
 
     return (
         <div className="chart-container">
-            <div >
+            <div className='charts'>
                 <h3>Month wise Sell</h3>
                 <LineChart width={500} height={250} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
                     <Line type="monotone" stroke="#8884d8" dataKey="sell" />
@@ -56,30 +56,30 @@ const ShowDashboard = () => {
                     <Tooltip />
                 </LineChart>
             </div>
-            <div>
+            <div className='charts'>
                 <h3>Investment vs Revenue</h3>
-                 <AreaChart
-                        width={500}
-                        height={250}
-                        data={data}
-                        margin={{
-                            top: 10,
-                            right: 30,
-                            left: 0,
-                            bottom: 0,
-                        }}
-                    >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Area type="monotone" dataKey="investment" stackId="1" stroke="#8884d8" fill="#8884d8" />
-                        <Area type="monotone" dataKey="revenue" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
-                       
-                    </AreaChart>
-            
+                <AreaChart
+                    width={500}
+                    height={250}
+                    data={data}
+                    margin={{
+                        top: 10,
+                        right: 30,
+                        left: 0,
+                        bottom: 0,
+                    }}
+                >
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                    <Area type="monotone" dataKey="investment" stackId="1" stroke="#8884d8" fill="#8884d8" />
+                    <Area type="monotone" dataKey="revenue" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
+
+                </AreaChart>
+
             </div>
-            <div>
+            <div className='charts'>
                 <h3>Investment vs Revenue</h3>
                 <BarChart width={500} height={250} data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
@@ -91,7 +91,7 @@ const ShowDashboard = () => {
                     <Bar dataKey="investment" fill="#82ca9d" />
                 </BarChart>
             </div>
-            <div>
+            <div className='charts'>
                 <h3>Investment vs Revenue</h3>
                 <PieChart width={500} height={250}>
                     <Pie data={data} dataKey="investment" nameKey="name" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />

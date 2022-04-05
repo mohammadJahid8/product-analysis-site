@@ -75,3 +75,20 @@
     
     color: #088a67;
 }
+@media only screen and (max-width: 668px){
+    .logo{
+        display: none;
+    }
+    .nav-bar{
+        width: auto;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .link{
+        font-size: 14px;
+    }
+        
+        
+    
+}
