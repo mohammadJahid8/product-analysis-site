@@ -56,6 +56,19 @@
     transition: 0.6s;
     font-size: 15px;
 }
+.active-link{
+    color: #088a67;
+    border-bottom: 3px solid #088a67;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 0 8px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    /* transition: 0.6s; */
+    font-size: 15px;
+}
 
 .link:hover {
     color: #088a67;
