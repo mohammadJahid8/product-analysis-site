@@ -3,6 +3,7 @@ import './App.css';
 import About from './Components/About/About';
 import Blogs from './Components/Blogs/Blogs';
 import Dashboard from './Components/Dashboard/Dashboard';
+import ShowDashboard from './Components/Dashboard/ShowDashboard';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import NothingFound from './Components/NothingFound/NothingFound';
@@ -17,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/reviews" element={<Reviews />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<ShowDashboard />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NothingFound />} />

@@ -1,0 +1,12 @@
+.chart-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
+    margin: 45px 0px 50px 60px;   
+}
+.chart-container h3{
+    text-align: center;
+    color: #82ca9d;
+    padding-bottom: 20px;
+}
+

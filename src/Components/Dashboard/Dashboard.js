@@ -1,10 +1,17 @@
 import React from 'react';
+// import useDashboard from '../hooks/useDashboard';
+// import ShowDashboard from './ShowDashboard';
 
 const Dashboard = () => {
+    
+
     return (
         <div>
-            <h1>This is dashboard</h1>
-        </div>
+            {
+                // dashboard.map(item => <ShowDashboard item={item} key={item.revenue} ></ShowDashboard>)
+            }
+            {/* <ShowDashboard item={dashboard} ></ShowDashboard> */}
+        </div >
     );
 };
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import HomeReviews from '../HomeReviews/HomeReviews';
-import Reviews from '../Reviews/Reviews';
 import './Home.css';
 
 
@@ -11,7 +10,7 @@ const Home = () => {
         <div className="">
             <div className="header-container">
                 <div className='header-info'>
-                    <h1>It is better to light a candle <br /> <span id="header-title">Than curse the darkness.</span></h1>
+                    <h1>It's better to light a candle <br /> <span id="header-title">Than curse the darkness.</span></h1>
                     <p>It’s an exotic island escape in the beautiful mix of bright citrus, sweet florals, and spicy vanilla. Top: Citrus, Melon, Berry. Mid: Osmanthus. Base: Spicy Vanilla, Musk, Woody Notes. Top note is the initial impression of the fragrance, middle note is the main body of the scent and base is its final impression.</p>
                 </div>
                 <div>
