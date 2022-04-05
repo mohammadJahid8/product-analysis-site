@@ -20,7 +20,7 @@ const Home = () => {
 
             </div>
             <div>
-                <h2 className="home-review">Customer Review(3)</h2>
+                <h2 className="review-title">Customer Review(3)</h2>
                 <HomeReviews></HomeReviews>
 
 

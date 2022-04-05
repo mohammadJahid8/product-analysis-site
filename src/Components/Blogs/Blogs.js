@@ -3,6 +3,7 @@ import './Blogs.css'
 const Blogs = () => {
     return (
         <div>
+            <h1 className="review-title">Frequently Asked Questions</h1>
             <div className="qna-container">
                 <h3>What is Context API?</h3>
                 <p>Context API is a component structure which helps us to provide data to all of our component without props drilling.It made our data sharing more easy.The data of context API is declared globally,for that we can use the data in our required component through useContext hook.</p>

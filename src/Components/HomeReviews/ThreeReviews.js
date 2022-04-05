@@ -1,3 +1,5 @@
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const ThreeReviews = ({ review }) => {
@@ -10,7 +12,7 @@ const ThreeReviews = ({ review }) => {
                     <img src={image} alt="" />
                 </div>
                 <div className="review-info">
-                    <h1>Name: {name}</h1>
+                    <h1><FontAwesomeIcon className="user-icon" icon={faUser}></FontAwesomeIcon>{name}</h1>
                     <h3>{title}</h3>
                     <p>{message.slice(0, 235)}...</p>
                     <p>Rate: {rate} </p>
